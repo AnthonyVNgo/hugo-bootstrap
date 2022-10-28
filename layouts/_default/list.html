@@ -1,0 +1,28 @@
+
+{{ define "main" }}
+<section style="height: 100vh; display: flex; justify-content: center; padding: 100px;">
+  <div style="width: 50vw;">
+		<div style="font-size: 64px;">
+			{{ .Title }}
+		</div>
+		<div>
+			{{.Content}}
+		</div>
+		<ul>
+			{{ range .Paginator.Pages.ByPublishDate.Reverse }}
+				<li style="padding: 10px;">  
+					<a href="{{ .RelPermalink }}">
+						<div>
+							{{ .Date.Format "2006-01-02" }}
+						</div>
+						<div>
+							{{ .Title }} 	
+						</div>
+					</a>
+				</li>
+			{{ end }}
+            {{ template "_internal/pagination.html" . }}
+		</ul>
+	</div>
+</section>
+{{ end }}
