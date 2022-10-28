@@ -1,9 +1,48 @@
 {{ define "main" }}
+
 <div class="container">
     <div class="row">
         <div class="column">
-            <h1>hi</h1>
+            <h1>index.html</h1>
         </div>
     </div>
 </div>
+
+
+<!-- <ul>
+
+   
+    {{ range .Paginator.Pages.ByPublishDate.Reverse }}
+        <li style="padding: 10px;">  
+            <a href="{{ .RelPermalink }}">
+                <div>
+                    {{ .Date.Format "2006-01-02" }}
+                </div>
+                <div>
+                    {{ .Title }} 	
+                </div>
+            </a>
+        </li>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</ul>
+
+<ul> -->
+<ul>
+    {{ $p := where site.RegularPages "Section"  "projects" }}    
+    {{ range (.Paginate $p).Pages.ByPublishDate.Reverse }}
+        <li style="padding: 10px;">  
+            <a href="{{ .RelPermalink }}">
+                <div>
+                    {{ .Date.Format "2006-01-02" }}
+                </div>
+                <div>
+                    {{ .Title }} 	
+                </div>
+            </a>
+        </li>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+</ul>
+ 
 {{end}}
