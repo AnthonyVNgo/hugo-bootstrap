@@ -1,0 +1,39 @@
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: rgba(255, 255, 255, 0.828);  
+  backdrop-filter: blur(5px);
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .posts-ul > a {
+  color: black;
+} */
+
+.posts-li > a {
+  color: black;
+}
+
+.posts-a {
+  text-decoration: none !important;
+}
