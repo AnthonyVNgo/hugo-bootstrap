@@ -32,12 +32,21 @@
 				<a href="{{ .Params.link }}" class="text-body" target="_blank">
 					<div class="overlay-container ratio ratio-1x1">
 						<img src="{{.Params.featuredImage}}" alt="{{.Title}}" style="object-fit: cover; object-position: center; border-radius: 5px;">
-						<div class="overlay w-100">
-							<div class="overlay-text">
-							<h3 class="text-dark">
-								{{.Title}}
-							</h3>
-							<p>{{ .Content}}</p>
+						<div class="overlay d-flex align-items-center w-100">
+							<div class="overlay-text p-3">
+								<h3>
+									{{.Title}}
+								</h3>
+								<p>
+									{{ .Content}}
+								</p>
+								
+
+								{{ range $tags := .Params.tags }}
+									<span class="badge bg-secondary">
+										{{ $tags }}
+									</span>
+								{{ end }}
 							</div>
 						</div>
 					</div>

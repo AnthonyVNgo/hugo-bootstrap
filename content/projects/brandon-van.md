@@ -7,4 +7,4 @@ featuredImage: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixl
 link: 'https://brandonvan.com/'
 ---
 
-Wordpress is what introduced me into web development and software engineering. After working on a couple of small projects, I quickly realized that there was a gap between the ideas of what I wanted to build and my skillset. With that being said, I was still able to work on some cool projects and here's one of them.
+A portfolio page built with Wordpress CMS and Elementor Pro designed to market the client's work and enable communications via the contact page and social media links. 
