@@ -34,6 +34,8 @@
 						<img src="{{.Params.featuredImage}}" alt="{{.Title}}" style="object-fit: cover; object-position: center; border-radius: 5px;">
 						<div class="overlay d-flex align-items-center w-100">
 							<div class="overlay-text p-3">
+								
+								<!-- Card content  -->
 								<h3>
 									{{.Title}}
 								</h3>
@@ -41,7 +43,7 @@
 									{{ .Content}}
 								</p>
 								
-
+								<!-- Technology badges -->
 								{{ range $tags := .Params.tags }}
 									<span class="badge bg-secondary">
 										{{ $tags }}
