@@ -16,10 +16,6 @@
   opacity: 1;
 }
 
-.overlay-text {
-  text-align: center;
-}
-
 .project-img {
   object-fit: cover;
   object-position: center;
