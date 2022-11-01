@@ -1,13 +1,16 @@
 {{ define "main" }}
 <!-- start -->
 
-<div class="container-fluid p-5">
+<div class="container py-5">
 	<div class="row justify-content-center">
 		<div class="col-11 col-md-8 col-lg-6 pb-5">
 			
+			<!-- Hero header  -->
 			<h3 style="text-align: center;">
 				Hey! I'm Anthony Ngo 👋
 			<h3>
+
+			<!-- Hero sub-heading  -->
 			<h5 style="text-align: center;">
 				I'm a software developer focused on delivering solutions for large organizations, small-businesses, and individuals through technology
 				<br>
@@ -19,6 +22,8 @@
 			</h5>
 		</div>
 	</div>
+
+	<!-- Project cards  -->
 	<div class="row gy-2 gx-2">
 		{{ $p := (where site.RegularPages "Type" "projects").ByPublishDate.Reverse }}
 		{{ range (.Paginate $p).Pages }}

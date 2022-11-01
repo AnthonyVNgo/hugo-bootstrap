@@ -25,15 +25,3 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-/* .posts-ul > a {
-  color: black;
-} */
-
-.posts-li > a {
-  color: black;
-}
-
-.posts-a {
-  text-decoration: none !important;
-}
