@@ -5,17 +5,20 @@
 .overlay {
   position: absolute;
   top: 0;
-  height: 100%;
   opacity: 0;
   transition: .25s ease;
   background-color: rgba(255, 255, 255, 0.828);  
   backdrop-filter: blur(5px);
+  border-radius: 5px;
 }
 
 .overlay-container:hover .overlay {
   opacity: 1;
 }
 
-.overlay-text {
-  text-align: center;
+.project-img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
 }
+

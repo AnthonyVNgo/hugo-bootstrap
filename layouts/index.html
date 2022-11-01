@@ -6,12 +6,13 @@
 		<div class="col-11 col-md-8 col-lg-6 pb-5">
 			
 			<!-- Hero header  -->
-			<h3 style="text-align: center;">
+			<h3 class="text-center">
 				Hey! I'm Anthony Ngo 👋
 			<h3>
+			<!-- Hero header  -->
 
 			<!-- Hero sub-heading  -->
-			<h5 style="text-align: center;">
+			<h5 class="text-center">
 				I'm a software developer focused on delivering solutions for large organizations, small-businesses, and individuals through technology
 				<br>
 				<br>
@@ -20,6 +21,8 @@
 				<br>
 				Here are some of my projects
 			</h5>
+			<!-- Hero sub-heading  -->
+
 		</div>
 	</div>
 
@@ -30,10 +33,11 @@
 			<div class="col-12 col-lg-6"> 	
 				<!-- <a href="{{ .RelPermalink }}" class="text-body"> -->
 				<a href="{{ .Params.link }}" class="text-body" target="_blank">
+					<!-- <div class="overlay-container ratio ratio-1x1"> -->
 					<div class="overlay-container ratio ratio-1x1">
-						<img src="{{.Params.featuredImage}}" alt="{{.Title}}" style="object-fit: cover; object-position: center; border-radius: 5px;">
-						<div class="overlay d-flex align-items-center w-100">
-							<div class="overlay-text p-3">
+						<img src="{{.Params.featuredImage}}" alt="{{.Title}}" class="project-img">
+						<div class="overlay d-flex align-items-center">
+							<div class="text-center px-5">
 								
 								<!-- Card content  -->
 								<h3>
